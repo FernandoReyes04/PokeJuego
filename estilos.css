@@ -1,0 +1,102 @@
+body{
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+#theme-switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+
+}
+body.dark-mode #game-area {
+    background-color: #333333;
+    border-color: #ffffff;
+}
+#volume-control {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+#volume-control input[type="range"] {
+    margin-left: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+#game-area {
+    background-image: url("kanto1.PNG");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000;
+    height: 500px;
+    position: relative;
+    width: 500px;
+    margin-left: 500px;
+}
+#difficulty-control {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    align-items: center;
+    user-select: none;
+}
+
+#difficulty-slider {
+    width: 200px;
+    margin: 10px;
+}
+
+#difficulty-value {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+.personaje {
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+
+#player {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+#player.pikachu {
+    background-image: url('chikapu.png');
+    background-size: cover;
+}
+#player.charmander {
+    background-image: url('charmander.png');
+    background-size: cover;
+}
+#player.squirtle {
+    background-image: url('squirtle.png');
+    background-size: cover;
+}
+#player.bulbasaur {
+    background-image: url('bulbasaur.png');
+    background-size: cover;
+}
+
+#beyonce {
+    background-image: url('pokeball.png');
+    background-size: cover;
+}

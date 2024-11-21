@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escapa de la Pokeball</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Intenta no ser capturado</h1>
+    <button id="play-button">Jugar</button>
+    <div id="game-area">
+        <div id="player" class="personaje"></div>
+        <div id="beyonce" class="personaje"></div>
+    </div>
+    <div id="theme-switch">
+        <label>
+            <input type="checkbox" id="toggle-theme">
+            Modo oscuro
+        </label>
+    </div>
+    <div id="volume-control">
+        <label for="volume">Volumen:</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    </div>
+    <div id="difficulty-control">
+        <label for="difficulty-slider">Dificultad</label>
+        <input type="range" id="difficulty-slider" min="0" max="100" value="50">
+        <span id="difficulty-value">Normal</span>
+    </div>
+    <div id="character-selector">
+        <label for="character-select">Selecciona un personaje:</label>
+        <select id="character-select">
+            <option value="pikachu" selected>pikachu</option>
+            <option value="charmander">charmander</option>
+            <option value="squirtle">squirtle</option>
+            <option value="bulbasaur">bulbasaur</option>
+        </select>
+    </div>    
+    <!-- <audio src="single.m4a"></audio> -->
+    <audio src="Phantasy Star 2 soundtrack Rise or Fall.m4a" id="audio" loop></audio>
+    <script src="app.js"></script>
+</body>
+</html>
